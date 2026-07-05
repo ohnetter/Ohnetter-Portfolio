@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --bg: #F1F1F8;
+  --surface: #BCC2F4;
+  --accent: #8B93E0;
+  --accent-dark: #4A52B0;
+  --accent-deep: #4A52B0;
+  --accent-deep2: #383F8C;
+  --lime: #4A52B0;
+  --pink: #F0658A;
+  --pink-deep: #E5487A;
+  --pink-deep2: #C93268;
+  --ink: #26264A;
+  --muted: #6B6FA0;
+}
+.dark {
+  --bg: #1B1420;
+  --surface: #2E2340;
+  --accent: #D6B4FC;
+  --accent-dark: #EDD9FF;
+  --accent-deep: #7C5CBF;
+  --accent-deep2: #5E3F9E;
+  --lime: #B3C589;
+  --pink: #FF6FA0;
+  --pink-deep: #F04E85;
+  --pink-deep2: #D6366D;
+  --ink: #F6F1EA;
+  --muted: #C7B8DE;
+}
+
+html {
+    scroll-behavior: smooth;
+} 
