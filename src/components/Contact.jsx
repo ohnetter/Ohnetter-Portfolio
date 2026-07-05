@@ -1,14 +1,20 @@
 import { Mail, Phone, MapPin, Send } from 'lucide-react'
+import blossom1 from '../assets/blossom-1.png'
+import petal1 from '../assets/petal-1.png'
+import petal2 from '../assets/petal-2.png'
+import petal3 from '../assets/petal-3.png'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
 import phoneImg from '../assets/phoneImg.png'
 
 const Contact = () => {
   return ( 
-    <section id='contact' className="py-16 px-6 overflow-hidden font-mono scroll-m-8">
+    <section id='contact' className="py-16 px-6 overflow-hidden font-mono scroll-m-8 relative">
       <div className="max-w-6xl mx-auto">
         <div data-aos="fade-up" data-aos-duration="800" className="text-center mb-10">
           <div className="flex items-center justify-center gap-3 mb-4">
+            <img src={blossom1} alt="" aria-hidden="true" className="w-20 h-20 object-contain select-none opacity-60 drop-shadow-[0_0_8px_rgba(240,101,138,0.5)] [image-rendering:pixelated]" />
             <h2 className="text-5xl font-bold text-[var(--accent-dark)]">Let's Talk</h2>
+            <img src={blossom1} alt="" aria-hidden="true" className="w-20 h-20 object-contain select-none opacity-60 drop-shadow-[0_0_8px_rgba(240,101,138,0.5)] [image-rendering:pixelated] scale-x-[-1]" />
           </div>
           <p className="text-stone-600 dark:text-gray-300">Have a project in mind? I'd love to hear about it.</p>
         </div>
@@ -61,6 +67,31 @@ const Contact = () => {
           </div>
         </div>
       </div>
+
+      <img src={petal1} alt="" aria-hidden="true"
+        className="absolute top-8 right-4 w-14 object-contain -rotate-[25deg]
+        pointer-events-none select-none [image-rendering:pixelated] hidden sm:block" />
+      <img src={petal2} alt="" aria-hidden="true"
+        className="absolute bottom-6 left-4 w-12 object-contain rotate-[50deg]
+        pointer-events-none select-none [image-rendering:pixelated] hidden sm:block" />
+      <img src={petal3} alt="" aria-hidden="true"
+        className="absolute top-1/2 right-8 w-10 object-contain rotate-[20deg]
+        pointer-events-none select-none [image-rendering:pixelated] hidden lg:block" />
+      <img src={petal1} alt="" aria-hidden="true"
+        className="absolute top-1/4 left-8 w-12 object-contain rotate-[40deg]
+        pointer-events-none select-none [image-rendering:pixelated] hidden sm:block" />
+      <img src={petal2} alt="" aria-hidden="true"
+        className="absolute bottom-16 right-12 w-10 object-contain -rotate-[60deg]
+        pointer-events-none select-none [image-rendering:pixelated] hidden lg:block" />
+      <img src={petal3} alt="" aria-hidden="true"
+        className="absolute top-3/4 left-12 w-10 object-contain rotate-[30deg]
+        pointer-events-none select-none [image-rendering:pixelated] hidden sm:block" />
+      <img src={petal1} alt="" aria-hidden="true"
+        className="absolute top-1/3 right-16 w-8 object-contain -rotate-[55deg]
+        pointer-events-none select-none [image-rendering:pixelated] hidden lg:block" />
+      <img src={petal2} alt="" aria-hidden="true"
+        className="absolute bottom-24 right-16 w-12 object-contain rotate-[45deg]
+        pointer-events-none select-none [image-rendering:pixelated] hidden sm:block" />
     </section>
   )
 }

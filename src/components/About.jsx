@@ -1,4 +1,8 @@
 import aboutImg from '../assets/aboutImg.png'
+import blossom1 from '../assets/blossom-1.png'
+import petal1 from '../assets/petal-1.png'
+import petal2 from '../assets/petal-2.png'
+import petal3 from '../assets/petal-3.png'
 
 const About = () => {
   const stats = [
@@ -18,9 +22,11 @@ const About = () => {
           </p>
 
           <div className="flex items-center gap-2 sm:gap-3 mb-4">
+            <img src={blossom1} alt="" aria-hidden="true" className="w-20 h-20 object-contain select-none opacity-60 drop-shadow-[0_0_8px_rgba(240,101,138,0.5)] [image-rendering:pixelated]" />
             <h2 className="text-3xl md:text-5xl font-bold text-stone-900 dark:text-white font-mono">
               About <span className='text-[var(--accent)]'>Me</span>
             </h2>
+            <img src={blossom1} alt="" aria-hidden="true" className="w-20 h-20 object-contain select-none opacity-60 drop-shadow-[0_0_8px_rgba(240,101,138,0.5)] [image-rendering:pixelated] scale-x-[-1]" />
           </div>
 
           <p className="text-stone-600 dark:text-gray-300 leading-relaxed mb-4 max-w-[65ch] font-mono text-sm sm:text-base">
@@ -60,6 +66,31 @@ const About = () => {
         </div>
 
       </div>
+
+      <img src={petal2} alt="" aria-hidden="true"
+        className="absolute top-8 right-4 w-14 object-contain rotate-[30deg]
+        pointer-events-none select-none [image-rendering:pixelated] hidden sm:block" />
+      <img src={petal1} alt="" aria-hidden="true"
+        className="absolute bottom-8 left-4 w-12 object-contain -rotate-[15deg]
+        pointer-events-none select-none [image-rendering:pixelated] hidden sm:block" />
+      <img src={petal3} alt="" aria-hidden="true"
+        className="absolute top-1/2 right-6 w-10 object-contain rotate-[60deg]
+        pointer-events-none select-none [image-rendering:pixelated] hidden lg:block" />
+      <img src={petal1} alt="" aria-hidden="true"
+        className="absolute top-1/4 left-6 w-12 object-contain -rotate-[40deg]
+        pointer-events-none select-none [image-rendering:pixelated] hidden sm:block" />
+      <img src={petal3} alt="" aria-hidden="true"
+        className="absolute bottom-16 right-16 w-10 object-contain rotate-[15deg]
+        pointer-events-none select-none [image-rendering:pixelated] hidden lg:block" />
+      <img src={petal2} alt="" aria-hidden="true"
+        className="absolute top-3/4 left-12 w-8 object-contain -rotate-[25deg]
+        pointer-events-none select-none [image-rendering:pixelated] hidden sm:block" />
+      <img src={petal1} alt="" aria-hidden="true"
+        className="absolute top-1/3 right-12 w-12 object-contain rotate-[80deg]
+        pointer-events-none select-none [image-rendering:pixelated] hidden lg:block" />
+      <img src={petal3} alt="" aria-hidden="true"
+        className="absolute bottom-32 left-16 w-10 object-contain rotate-[35deg]
+        pointer-events-none select-none [image-rendering:pixelated] hidden sm:block" />
     </section>
   )
 }

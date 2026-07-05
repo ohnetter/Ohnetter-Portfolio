@@ -4,6 +4,9 @@ import { DownloadIcon } from 'lucide-react'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
 import { useState, useEffect } from 'react'
 import TechStackBar from './TechStackBar'
+import petal1 from '../assets/petal-1.png'
+import petal2 from '../assets/petal-2.png'
+import petal3 from '../assets/petal-3.png'
 
 const Hero = () => {
   const [text, setText] = useState('')
@@ -148,6 +151,23 @@ const Hero = () => {
           className="absolute -top-20 -left-20 w-40 h-40 sm:w-64 sm:h-64 bg-[var(--accent)]
            rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse delay-1000 hidden sm:block"
         />
+
+        {/* Decorative petals — ambient, non-interactive */}
+        <img src={petal3} alt="" aria-hidden="true"
+          className="absolute top-12 right-6 w-16 object-contain rotate-[25deg]
+          pointer-events-none select-none [image-rendering:pixelated] hidden sm:block" />
+        <img src={petal2} alt="" aria-hidden="true"
+          className="absolute top-16 left-4 w-14 object-contain rotate-[55deg]
+          pointer-events-none select-none [image-rendering:pixelated] hidden sm:block" />
+        <img src={petal1} alt="" aria-hidden="true"
+          className="absolute top-56 right-10 w-16 object-contain -rotate-[15deg]
+          pointer-events-none select-none [image-rendering:pixelated] hidden lg:block" />
+        <img src={petal3} alt="" aria-hidden="true"
+          className="absolute top-72 left-6 w-14 object-contain -rotate-[20deg]
+          pointer-events-none select-none [image-rendering:pixelated] hidden sm:block" />
+        <img src={petal2} alt="" aria-hidden="true"
+          className="absolute top-80 right-20 w-12 object-contain rotate-[45deg]
+          pointer-events-none select-none [image-rendering:pixelated] hidden sm:block" />
       </section>
       <TechStackBar />
     </div>

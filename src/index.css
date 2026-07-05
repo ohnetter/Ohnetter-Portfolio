@@ -32,4 +32,20 @@
 
 html {
     scroll-behavior: smooth;
-} 
+}
+
+@keyframes petal-fall {
+  0%   { transform: translateY(-80px) rotate(0deg);   opacity: 0; }
+  8%   { opacity: 1; }
+  92%  { opacity: 1; }
+  100% { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+}
+
+@keyframes petal-sway {
+  from { transform: translateX(-22px); }
+  to   { transform: translateX(22px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .falling-petals-overlay { display: none; }
+}

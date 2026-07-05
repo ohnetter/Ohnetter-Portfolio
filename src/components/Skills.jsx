@@ -1,4 +1,8 @@
 import skillsImg from '../assets/skillsImg.png'
+import blossom1 from '../assets/blossom-1.png'
+import petal1 from '../assets/petal-1.png'
+import petal2 from '../assets/petal-2.png'
+import petal3 from '../assets/petal-3.png'
 
 const Skills = () => {
   const categories = [
@@ -9,13 +13,15 @@ const Skills = () => {
   ]
 
   return (
-    <section id='skills' className="scroll-mt-24 py-12 md:py-20 px-4 md:px-6 overflow-hidden font-mono">
+    <section id='skills' className="scroll-mt-24 py-12 md:py-20 px-4 md:px-6 overflow-hidden font-mono relative">
       <div className="max-w-6xl mx-auto">
         <div data-aos="fade-up" data-aos-duration="800" className="text-center mb-8 md:mb-12">
           <div className="flex items-center justify-center gap-3 mb-4">
+            <img src={blossom1} alt="" aria-hidden="true" className="w-20 h-20 object-contain select-none opacity-60 drop-shadow-[0_0_8px_rgba(240,101,138,0.5)] [image-rendering:pixelated]" />
             <h2 className="text-3xl md:text-5xl font-bold text-[var(--accent-dark)]">
               My Skills
             </h2>
+            <img src={blossom1} alt="" aria-hidden="true" className="w-20 h-20 object-contain select-none opacity-60 drop-shadow-[0_0_8px_rgba(240,101,138,0.5)] [image-rendering:pixelated] scale-x-[-1]" />
           </div>
           <p className="text-stone-600 dark:text-gray-300 text-sm md:text-base">Platforms and tools I've worked with</p>
         </div>
@@ -62,6 +68,31 @@ const Skills = () => {
           </div>
         </div>
       </div>
+
+      <img src={petal3} alt="" aria-hidden="true"
+        className="absolute top-8 left-4 w-14 object-contain rotate-[15deg]
+        pointer-events-none select-none [image-rendering:pixelated] hidden sm:block" />
+      <img src={petal1} alt="" aria-hidden="true"
+        className="absolute bottom-6 right-6 w-12 object-contain -rotate-[30deg]
+        pointer-events-none select-none [image-rendering:pixelated] hidden sm:block" />
+      <img src={petal2} alt="" aria-hidden="true"
+        className="absolute top-2/3 right-4 w-10 object-contain rotate-[50deg]
+        pointer-events-none select-none [image-rendering:pixelated] hidden lg:block" />
+      <img src={petal1} alt="" aria-hidden="true"
+        className="absolute top-1/3 right-8 w-12 object-contain rotate-[65deg]
+        pointer-events-none select-none [image-rendering:pixelated] hidden sm:block" />
+      <img src={petal3} alt="" aria-hidden="true"
+        className="absolute top-1/2 left-8 w-10 object-contain -rotate-[50deg]
+        pointer-events-none select-none [image-rendering:pixelated] hidden lg:block" />
+      <img src={petal2} alt="" aria-hidden="true"
+        className="absolute top-1/4 left-12 w-10 object-contain rotate-[30deg]
+        pointer-events-none select-none [image-rendering:pixelated] hidden sm:block" />
+      <img src={petal1} alt="" aria-hidden="true"
+        className="absolute bottom-20 right-10 w-8 object-contain -rotate-[45deg]
+        pointer-events-none select-none [image-rendering:pixelated] hidden lg:block" />
+      <img src={petal3} alt="" aria-hidden="true"
+        className="absolute top-3/4 right-12 w-12 object-contain rotate-[20deg]
+        pointer-events-none select-none [image-rendering:pixelated] hidden sm:block" />
     </section>
   )
 }

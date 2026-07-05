@@ -11,6 +11,7 @@ import ProjectsSection from './components/ProjectsSection'
 import Contact from './components/Contact'
 import Skills from './components/Skills'
 import Footer from './components/Footer'
+import FallingPetals from './components/FallingPetals'
 
 const App = () => { 
   const [dark, setDark] = useState(false)
@@ -39,6 +40,7 @@ const App = () => {
     <div className={dark ? 'dark' : ''}>
       <div className='bg-linear-to-br from-[var(--bg)] via-[var(--surface)] to-[var(--bg)]
        min-h-screen transition-colors duration-300'>
+        <FallingPetals />
         <Header dark={dark} setDark={setDark} />
         <Hero /> 
         <About /> 
