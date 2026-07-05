@@ -56,7 +56,7 @@ const Hero = () => {
       >
         <div className="max-w-6xl mx-auto flex px-4 sm:px-8 lg:px-14 py-12 lg:py-14
          flex-col lg:flex-row items-center justify-center gap-10 lg:gap-16 lg:mt-14 mt-14 overflow-hidden">
-          <div className="lg:w-1/2 w-full flex flex-col items-center lg:items-start text-center lg:text-left mb-12 lg:mb-0">
+          <div className="lg:w-1/2 w-full flex flex-col items-center lg:items-start text-center lg:text-left mb-12 lg:mb-0 order-last lg:order-first">
             <div className="flex items-center gap-3 justify-center lg:justify-start">
               <h1
                 className="title-font text-3xl sm:text-4xl lg:text-5xl mb-2 font-bold text-stone-900 dark:text-white font-mono"
@@ -132,7 +132,7 @@ const Hero = () => {
           </div>
 
           <div
-            className="w-full lg:w-auto flex justify-center flex-shrink-0"
+            className="w-full lg:w-auto flex justify-center flex-shrink-0 order-first lg:order-last"
             data-aos="fade-left"
             data-aos-delay="400"
           >
