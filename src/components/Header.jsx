@@ -20,7 +20,7 @@ const Navbar = ({ dark, setDark }) => {
   }
 
   return (
-    <div className="flex justify-center w-full fixed z-50 mt-4">
+    <div className="flex justify-center w-full fixed z-50 mt-4 px-4">
       <nav className="flex items-center justify-center bg-[#fdeaec]/90 dark:bg-linear-to-br dark:from-[var(--accent)]/40 dark:via-[var(--pink)]/25 dark:to-[var(--lime)]/40
        backdrop-blur-lg rounded-2xl px-4 lg:px-8 py-2 border-2 border-[var(--ink)]
        shadow-[4px_4px_0_0_var(--ink)] font-sans">
@@ -73,7 +73,7 @@ const Navbar = ({ dark, setDark }) => {
             <a
               href="#contact"
               className="hidden lg:block px-6 py-2 font-semibold font-mono tracking-wide text-sm rounded-full bg-linear-to-r
-               from-[var(--accent-deep)] to-[var(--accent-deep2)] text-white border-2 border-[var(--ink)]
+               from-[var(--pink-deep)] to-[var(--pink-deep2)] text-white border-2 border-[var(--ink)]
                shadow-[3px_3px_0_0_var(--ink)] hover:shadow-[4px_4px_0_0_var(--ink)] hover:-translate-x-0.5 hover:-translate-y-0.5
                active:shadow-none active:translate-x-0 active:translate-y-0 transition-all duration-150"
             >
@@ -129,8 +129,9 @@ const Navbar = ({ dark, setDark }) => {
               <a
                 href="#contact"
                 onClick={() => setIsMenuOpen(false)}
-                className="block py-3 px-4 text-center font-semibold font-mono text-sm rounded-full bg-linear-to-r from-[var(--accent-deep)] to-[var(--accent-deep2)]
-                 text-white shadow-md"
+                className="block py-3 px-4 text-center font-semibold font-mono text-sm rounded-full bg-linear-to-r
+                 from-[var(--pink-deep)] to-[var(--pink-deep2)] text-white border-2 border-[var(--ink)]
+                 shadow-[3px_3px_0_0_var(--ink)] active:shadow-none active:translate-x-0 active:translate-y-0 transition-all duration-150"
               >
                 Let's Talk
               </a>

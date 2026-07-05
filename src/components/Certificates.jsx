@@ -61,7 +61,7 @@ const Certificates = () => {
         <div data-aos="fade-up" data-aos-duration="800" className="text-center mb-16">
           <div className="flex items-center justify-center gap-4 mb-4">
             <img src={blossom1} alt="" aria-hidden="true" className="w-20 h-20 object-contain select-none opacity-60 drop-shadow-[0_0_8px_rgba(240,101,138,0.5)] [image-rendering:pixelated]" />
-            <h2 className="text-5xl font-bold text-[var(--accent-dark)] font-mono">
+            <h2 className="text-3xl md:text-5xl font-bold text-[var(--accent-dark)] font-mono">
               Certifications
             </h2>
             <img src={blossom1} alt="" aria-hidden="true" className="w-20 h-20 object-contain select-none opacity-60 drop-shadow-[0_0_8px_rgba(240,101,138,0.5)] [image-rendering:pixelated] scale-x-[-1]" />
