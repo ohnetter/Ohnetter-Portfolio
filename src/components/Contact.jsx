@@ -11,7 +11,7 @@ const Contact = () => {
     <section id='contact' className="py-16 px-6 overflow-hidden font-mono scroll-m-8 relative">
       <div className="max-w-6xl mx-auto">
         <div data-aos="fade-up" data-aos-duration="800" className="text-center mb-10">
-          <div className="flex items-center justify-center gap-3 mb-4">
+          <div className="flex items-center justify-center gap-2 mb-4">
             <img src={blossom1} alt="" aria-hidden="true" className="w-20 h-20 object-contain select-none opacity-60 drop-shadow-[0_0_8px_rgba(240,101,138,0.5)] [image-rendering:pixelated]" />
             <h2 className="text-3xl md:text-5xl font-bold text-[var(--accent-dark)]">Let's Talk</h2>
             <img src={blossom1} alt="" aria-hidden="true" className="w-20 h-20 object-contain select-none opacity-60 drop-shadow-[0_0_8px_rgba(240,101,138,0.5)] [image-rendering:pixelated] scale-x-[-1]" />

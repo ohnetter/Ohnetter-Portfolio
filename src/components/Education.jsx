@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Calendar, Award } from 'lucide-react'
 import educ from '../assets/educ.png'
+import blossom1 from '../assets/blossom-1.png'
 
 const Education = () => {
   const [selected, setSelected] = useState(null)
@@ -18,7 +19,7 @@ const Education = () => {
   ]
 
   return (
-    <section id='education' className="scroll-mt-24 py-12 md:py-20 px-4 md:px-6 font-mono overflow-hidden">
+    <section id='education' className="scroll-mt-24 py-12 md:py-20 px-4 md:px-6 font-mono overflow-hidden relative">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-2 md:gap-12">
         <img 
           data-aos="fade-right" 
@@ -29,8 +30,10 @@ const Education = () => {
         />
         
         <div data-aos="fade-left" data-aos-duration="1000" className="lg:w-1/2 w-full">
-          <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
-            <h2 className="text-3xl md:text-5xl font-bold text-[var(--accent-dark)]">Where I've Worked</h2>
+          <div className="flex items-center justify-center lg:justify-start gap-2 mb-4">
+            <img src={blossom1} alt="" aria-hidden="true" className="w-20 h-20 object-contain select-none opacity-60 drop-shadow-[0_0_8px_rgba(240,101,138,0.5)] [image-rendering:pixelated]" />
+            <h2 className="text-3xl md:text-5xl font-bold text-[var(--accent-dark)]">Work History</h2>
+            <img src={blossom1} alt="" aria-hidden="true" className="w-20 h-20 object-contain select-none opacity-60 drop-shadow-[0_0_8px_rgba(240,101,138,0.5)] [image-rendering:pixelated] scale-x-[-1]" />
           </div>
           <p className="text-stone-600 dark:text-gray-300 mb-6 md:mb-8 text-center lg:text-left">My professional path</p>
 

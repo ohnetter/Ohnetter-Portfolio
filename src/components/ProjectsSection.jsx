@@ -54,7 +54,7 @@ const ProjectsSection = () => {
     <section id='projects' className="scroll-mt-24 py-20 px-6 font-mono overflow-hidden relative">
       <div className="max-w-6xl mx-auto">
         <div data-aos="fade-up" data-aos-duration="800" className="text-center mb-12">
-          <div className="flex items-center justify-center gap-3 mb-4">
+          <div className="flex items-center justify-center gap-2 mb-4">
             <img src={blossom1} alt="" aria-hidden="true" className="w-20 h-20 object-contain select-none opacity-60 drop-shadow-[0_0_8px_rgba(240,101,138,0.5)] [image-rendering:pixelated]" />
             <h2 className="text-3xl md:text-5xl font-bold text-[var(--accent-dark)]">Projects</h2>
             <img src={blossom1} alt="" aria-hidden="true" className="w-20 h-20 object-contain select-none opacity-60 drop-shadow-[0_0_8px_rgba(240,101,138,0.5)] [image-rendering:pixelated] scale-x-[-1]" />

@@ -14,7 +14,7 @@ const PETALS = [
 
 const FallingPetals = () => (
   <div
-    className="fixed inset-0 top-20 pointer-events-none z-[2] overflow-hidden"
+    className="fixed inset-0 pointer-events-none z-[2] overflow-hidden"
     aria-hidden="true"
   >
     {PETALS.map((p, i) => (
