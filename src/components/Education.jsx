@@ -30,10 +30,14 @@ const Education = () => {
         />
         
         <div data-aos="fade-left" data-aos-duration="1000" className="lg:w-1/2 w-full">
-          <div className="flex items-center justify-center lg:justify-start gap-2 mb-4">
-            <img src={blossom1} alt="" aria-hidden="true" className="w-20 h-20 object-contain select-none opacity-60 drop-shadow-[0_0_8px_rgba(240,101,138,0.5)] [image-rendering:pixelated]" />
-            <h2 className="text-3xl md:text-5xl font-bold text-[var(--accent-dark)]">Work History</h2>
-            <img src={blossom1} alt="" aria-hidden="true" className="w-20 h-20 object-contain select-none opacity-60 drop-shadow-[0_0_8px_rgba(240,101,138,0.5)] [image-rendering:pixelated] scale-x-[-1]" />
+          <div className="flex items-center justify-center lg:justify-start gap-1 mb-4 flex-wrap">
+            <div className="w-10 h-10 sm:w-14 sm:h-14 md:w-20 md:h-20 shrink-0 overflow-hidden flex items-center justify-center opacity-60 drop-shadow-[0_0_8px_rgba(240,101,138,0.5)]">
+              <img src={blossom1} alt="" aria-hidden="true" className="w-full h-full object-contain scale-150 select-none [image-rendering:pixelated]" />
+            </div>
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-[var(--accent-dark)] text-center">Work History</h2>
+            <div className="w-10 h-10 sm:w-14 sm:h-14 md:w-20 md:h-20 shrink-0 overflow-hidden flex items-center justify-center opacity-60 drop-shadow-[0_0_8px_rgba(240,101,138,0.5)] scale-x-[-1]">
+              <img src={blossom1} alt="" aria-hidden="true" className="w-full h-full object-contain scale-150 select-none [image-rendering:pixelated]" />
+            </div>
           </div>
           <p className="text-stone-600 dark:text-gray-300 mb-6 md:mb-8 text-center lg:text-left">My professional path</p>
 

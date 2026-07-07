@@ -16,12 +16,16 @@ const Skills = () => {
     <section id='skills' className="scroll-mt-24 py-12 md:py-20 px-4 md:px-6 overflow-hidden font-mono relative">
       <div className="max-w-6xl mx-auto">
         <div data-aos="fade-up" data-aos-duration="800" className="text-center mb-8 md:mb-12">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <img src={blossom1} alt="" aria-hidden="true" className="w-20 h-20 object-contain select-none opacity-60 drop-shadow-[0_0_8px_rgba(240,101,138,0.5)] [image-rendering:pixelated]" />
-            <h2 className="text-3xl md:text-5xl font-bold text-[var(--accent-dark)]">
+          <div className="flex items-center justify-center gap-1 mb-4 flex-wrap">
+            <div className="w-10 h-10 sm:w-14 sm:h-14 md:w-20 md:h-20 shrink-0 overflow-hidden flex items-center justify-center opacity-60 drop-shadow-[0_0_8px_rgba(240,101,138,0.5)]">
+              <img src={blossom1} alt="" aria-hidden="true" className="w-full h-full object-contain scale-150 select-none [image-rendering:pixelated]" />
+            </div>
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-[var(--accent-dark)]">
               My Skills
             </h2>
-            <img src={blossom1} alt="" aria-hidden="true" className="w-20 h-20 object-contain select-none opacity-60 drop-shadow-[0_0_8px_rgba(240,101,138,0.5)] [image-rendering:pixelated] scale-x-[-1]" />
+            <div className="w-10 h-10 sm:w-14 sm:h-14 md:w-20 md:h-20 shrink-0 overflow-hidden flex items-center justify-center opacity-60 drop-shadow-[0_0_8px_rgba(240,101,138,0.5)] scale-x-[-1]">
+              <img src={blossom1} alt="" aria-hidden="true" className="w-full h-full object-contain scale-150 select-none [image-rendering:pixelated]" />
+            </div>
           </div>
           <p className="text-stone-600 dark:text-gray-300 text-sm md:text-base">Platforms and tools I've worked with</p>
         </div>

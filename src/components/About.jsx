@@ -21,12 +21,16 @@ const About = () => {
             Get To Know Me
           </p>
 
-          <div className="flex items-center gap-2 sm:gap-3 mb-4">
-            <img src={blossom1} alt="" aria-hidden="true" className="w-20 h-20 object-contain select-none opacity-60 drop-shadow-[0_0_8px_rgba(240,101,138,0.5)] [image-rendering:pixelated]" />
-            <h2 className="text-3xl md:text-5xl font-bold text-stone-900 dark:text-white font-mono">
+          <div className="flex items-center gap-1 mb-4 flex-wrap">
+            <div className="w-10 h-10 sm:w-14 sm:h-14 md:w-20 md:h-20 shrink-0 overflow-hidden flex items-center justify-center opacity-60 drop-shadow-[0_0_8px_rgba(240,101,138,0.5)]">
+              <img src={blossom1} alt="" aria-hidden="true" className="w-full h-full object-contain scale-150 select-none [image-rendering:pixelated]" />
+            </div>
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-stone-900 dark:text-white font-mono">
               About <span className='text-[var(--accent)]'>Me</span>
             </h2>
-            <img src={blossom1} alt="" aria-hidden="true" className="w-20 h-20 object-contain select-none opacity-60 drop-shadow-[0_0_8px_rgba(240,101,138,0.5)] [image-rendering:pixelated] scale-x-[-1]" />
+            <div className="w-10 h-10 sm:w-14 sm:h-14 md:w-20 md:h-20 shrink-0 overflow-hidden flex items-center justify-center opacity-60 drop-shadow-[0_0_8px_rgba(240,101,138,0.5)] scale-x-[-1]">
+              <img src={blossom1} alt="" aria-hidden="true" className="w-full h-full object-contain scale-150 select-none [image-rendering:pixelated]" />
+            </div>
           </div>
 
           <p className="text-stone-600 dark:text-gray-300 leading-relaxed mb-4 max-w-[65ch] font-mono text-sm sm:text-base">

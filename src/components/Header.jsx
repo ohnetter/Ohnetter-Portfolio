@@ -20,15 +20,15 @@ const Navbar = ({ dark, setDark }) => {
   }
 
   return (
-    <div className="flex justify-center w-full fixed z-50 mt-4 px-6">
-      <nav className="flex items-center justify-center bg-[#fdeaec]/90 dark:bg-linear-to-br dark:from-[var(--accent)]/40 dark:via-[var(--pink)]/25 dark:to-[var(--lime)]/40
-       backdrop-blur-lg rounded-2xl px-4 lg:px-8 py-2 border-2 border-[var(--ink)]
+    <div className="flex justify-center w-full fixed z-50 mt-4 px-3 sm:px-6">
+      <nav className="flex items-center justify-center w-full max-w-fit bg-[#fdeaec]/90 dark:bg-linear-to-br dark:from-[var(--accent)]/40 dark:via-[var(--pink)]/25 dark:to-[var(--lime)]/40
+       backdrop-blur-lg rounded-2xl px-3 sm:px-4 lg:px-8 py-2 border-2 border-[var(--ink)]
        shadow-[4px_4px_0_0_var(--ink)] font-sans">
-        <div className="flex items-center justify-between w-full space-x-6 lg:space-x-8">
+        <div className="flex items-center justify-between w-full space-x-2 sm:space-x-6 lg:space-x-8">
           {/* Logo */}
-          <a href="/" className="flex items-center space-x-2"> 
-            <span className="text-2xl font-mono font-extrabold text-[var(--accent-dark)]"> 
-              annette<span style={{ color: 'var(--pink)' }}>.sheriff</span> 
+          <a href="/" className="flex items-center space-x-2 min-w-0">
+            <span className="text-base sm:text-xl lg:text-2xl font-mono font-extrabold text-[var(--accent-dark)] truncate">
+              annette<span style={{ color: 'var(--pink)' }}>.sheriff</span>
             </span>
           </a>
 
@@ -60,7 +60,7 @@ const Navbar = ({ dark, setDark }) => {
           </div>
 
           {/* Actions */}
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 shrink-0">
             <button
               onClick={() => setDark(!dark)}
               aria-label="Toggle dark mode"
@@ -82,7 +82,7 @@ const Navbar = ({ dark, setDark }) => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="flex lg:hidden items-center space-x-4 px-2">
+          <div className="flex lg:hidden items-center shrink-0">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="p-2 rounded-full border-2 border-[var(--ink)] shadow-[2px_2px_0_0_var(--ink)] transition-all"
